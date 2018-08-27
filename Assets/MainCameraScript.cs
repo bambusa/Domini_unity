@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using Domini;
 using Domini.Buildings;
 using UnityEngine;
@@ -19,11 +18,11 @@ public class MainCameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _gameManager.Update();
+        _gameManager.Update(Time.time, Time.deltaTime);
         if (Input.GetMouseButtonUp(0))
         {
             print("Clicked");
-            _gameManager.BuildingManager.Build(Building.Woodjack);
+            _gameManager.BuildingManager.Build(BuildingType.Woodjack);
         }
     }
 }
