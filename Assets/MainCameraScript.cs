@@ -10,19 +10,32 @@ public class MainCameraScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        print("Start");
+        print("Start MainCameraScript");
         _gameManager = GameManager.Instance;
-        _gameManager.Start();
+
+        if (_gameManager.IsStarted)
+            InitCamera();
+        else
+            _gameManager.GameManagerStarted += (s, a) => InitCamera();
+    }
+
+    private void InitCamera()
+    {
+        gameObject.transform.position = new Vector3(_gameManager.CameraPositionX, _gameManager.CameraPositionY, 
+            gameObject.transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        _gameManager.Update(Time.time, Time.deltaTime);
-        if (Input.GetMouseButtonUp(0))
+        if (_gameManager.IsStarted)
         {
-            print("Clicked");
-            _gameManager.BuildingManager.Build(BuildingType.Woodjack);
+            _gameManager.Update(Time.time, Time.deltaTime);
+            if (Input.GetMouseButtonUp(0))
+            {
+                print("Clicked");
+                _gameManager.BuildingManager.Build(BuildingType.Woodjack);
+            }
         }
     }
 }

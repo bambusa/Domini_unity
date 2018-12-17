@@ -1,0 +1,2 @@
+C:\Users\BSD\RiderProjects\Domini_unity\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\BSD\RiderProjects\Domini_unity\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
