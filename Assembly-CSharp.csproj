@@ -54,9 +54,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManagerScript.cs" />
-    <Compile Include="Assets\MainCameraScript.cs" />
-    <Compile Include="Assets\MapManagerScript.cs" />
+    <Compile Include="Assets\Scripts\BuildScript.cs" />
+    <Compile Include="Assets\Scripts\GameManagerScript.cs" />
+    <Compile Include="Assets\Scripts\HUD\BuildUIScript.cs" />
+    <Compile Include="Assets\Scripts\HUD\ErrorTextScript.cs" />
+    <Compile Include="Assets\Scripts\MainCameraScript.cs" />
+    <Compile Include="Assets\Scripts\MapManagerScript.cs" />
+    <Compile Include="Assets\Utils\BroadcastMessages\ErrorMessage.cs" />
+    <Compile Include="Assets\Utils\Constants.cs" />
+    <Compile Include="Assets\Utils\GameManagerMember.cs" />
+    <Compile Include="Assets\Utils\Messenger.cs" />
+    <Compile Include="Assets\Utils\MessengerMember.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/BSD/RiderProjects/Domini_unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
