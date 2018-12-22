@@ -19,6 +19,8 @@
         </e>
         <e p="Utils" t="Include">
           <e p="BroadcastMessages" t="Include">
+            <e p="BroadcastMessage.cs" t="Include" />
+            <e p="ChooseBuildPositionMessage.cs" t="Include" />
             <e p="ErrorMessage.cs" t="Include" />
           </e>
           <e p="Constants.cs" t="Include" />

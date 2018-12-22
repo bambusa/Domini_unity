@@ -2,7 +2,7 @@ using System;
 using Domini;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace Utils
 {
     public class GameManagerMember : MonoBehaviour
     {

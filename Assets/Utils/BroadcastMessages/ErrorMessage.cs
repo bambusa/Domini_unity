@@ -1,15 +1,19 @@
-namespace DefaultNamespace.Messages
+namespace Utils.BroadcastMessages
 {
-    public class ErrorMessage
+    public class ErrorMessage : BroadcastMessage
     {
-        public static readonly string Receiver = "ErrorMessageReceived";
-
         public string Message;
         public int ShowSeconds = 3;
 
         public ErrorMessage(string message)
         {
-            this.Message = message;
+            Message = message;
+        }
+
+        public ErrorMessage(string message, int showSeconds)
+        {
+            Message = message;
+            ShowSeconds = showSeconds;
         }
     }
 }

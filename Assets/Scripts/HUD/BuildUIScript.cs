@@ -1,11 +1,10 @@
-using System.Runtime.InteropServices;
-using DefaultNamespace.Messages;
-using Domini;
 using Domini.Buildings;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
+using Utils.BroadcastMessages;
 
-namespace DefaultNamespace
+namespace HUD
 {
     public class BuildUIScript : MessengerMember
     {
@@ -38,7 +37,7 @@ namespace DefaultNamespace
         {
             if (_gameManager.ResourceManager.ResourceStorage.AreResourcesAvailable(buildingData.BuildingCosts))
             {
-                
+                Messenger.Send();
             }
             else
             {

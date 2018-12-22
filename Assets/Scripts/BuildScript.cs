@@ -1,12 +1,10 @@
 using UnityEngine;
+using Utils;
 
-namespace DefaultNamespace
+public class BuildScript : MessengerMember
 {
-    public class BuildScript : MessengerMember
+    protected override void Start()
     {
-        protected override void Start()
-        {
-            base.Start();
-        }
+        base.Start();
     }
 }

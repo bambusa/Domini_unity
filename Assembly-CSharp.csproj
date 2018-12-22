@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\HUD\ErrorTextScript.cs" />
     <Compile Include="Assets\Scripts\MainCameraScript.cs" />
     <Compile Include="Assets\Scripts\MapManagerScript.cs" />
+    <Compile Include="Assets\Utils\BroadcastMessages\BroadcastMessage.cs" />
+    <Compile Include="Assets\Utils\BroadcastMessages\ChooseBuildPositionMessage.cs" />
     <Compile Include="Assets\Utils\BroadcastMessages\ErrorMessage.cs" />
     <Compile Include="Assets\Utils\Constants.cs" />
     <Compile Include="Assets\Utils\GameManagerMember.cs" />

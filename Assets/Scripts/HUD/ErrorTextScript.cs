@@ -1,10 +1,9 @@
-using System;
 using System.Threading.Tasks;
-using DefaultNamespace.Messages;
-using UnityEngine;
 using UnityEngine.UI;
+using Utils;
+using Utils.BroadcastMessages;
 
-namespace DefaultNamespace
+namespace HUD
 {
     public class ErrorTextScript : MessengerMember
     {
